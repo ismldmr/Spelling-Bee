@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="Pane" prefHeight="396.0" prefWidth="751.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spellinggame.MainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <Button focusTraversable="false" layoutX="335.0" layoutY="30.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="81.0" style="-fx-background-color: white; -fx-background-image: url(https://i.pinimg.com/originals/bf/5d/5a/bf5d5a9b473555855639c718213f1315.jpg); -fx-background-size: 75px;">
+            <font>
+                <Font name="Berlin Sans FB Bold" size="1.0" />
+            </font></Button>
+        <Label alignment="CENTER" layoutX="172.0" layoutY="110.0" prefHeight="60.0" prefWidth="406.0" text="TÜRKÇE">
+            <font>
+                <Font name="Comic Sans MS Bold" size="17.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="173.0" layoutY="147.0" prefHeight="60.0" prefWidth="406.0" text="SPELLING BEE OYUNUNA HOŞ GELDİNİZ !">
+            <font>
+                <Font name="Comic Sans MS Bold" size="17.0" />
+            </font>
+        </Label>
+        <Button fx:id="NormalGame" alignment="CENTER" layoutX="172.0" layoutY="246.0" mnemonicParsing="false" onAction="#CasualGame" prefHeight="50.0" prefWidth="140.0" style="-fx-background-radius: 100; -fx-background-size: 75px;" text="ÖZEL OYUN">
+            <font>
+                <Font name="Comic Sans MS Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="CasualGame" alignment="CENTER" layoutX="438.0" layoutY="246.0" mnemonicParsing="false" onAction="#NormalGame" prefHeight="50.0" prefWidth="140.0" style="-fx-background-radius: 100; -fx-background-size: 100px;" text="NORMAL OYUN">
+            <font>
+                <Font name="Comic Sans MS Bold" size="14.0" />
+            </font>
+        </Button>
+    </children>
+
+</Pane>

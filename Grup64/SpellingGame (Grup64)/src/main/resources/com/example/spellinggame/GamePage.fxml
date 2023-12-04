@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane accessibleRole="TEXT_FIELD" prefHeight="600.0" prefWidth="970.0" style="-fx-background-color: ghostwhite;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spellinggame.NormalGameController" >
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Button id="CenterButton" fx:id="CenterButton" layoutX="201.0" layoutY="166.0" onAction="#CenterLetter" prefHeight="81.0" prefWidth="80.0" style="-fx-background-image: url(https://www.iconsdb.com/icons/preview/yellow/hexagon-xxl.png); -fx-background-color: ghostwhite; -fx-background-size: 80px;">
+        <font>
+            <Font name="System Bold" size="24.0" />
+        </font></Button>
+    <Button fx:id="FirstButton" layoutX="121.0" layoutY="125.0" onAction="#FirstLetter" prefHeight="81.0" prefWidth="80.0" style="-fx-background-image: url(https://www.iconsdb.com/icons/preview/gray/hexagon-xxl.png); -fx-background-size: 80px; -fx-background-color: ghostwhite;">
+        <font>
+            <Font name="System Bold" size="20.0" />
+        </font></Button>
+    <Button fx:id="SecondButton" layoutX="282.0" layoutY="125.0" onAction="#SecondLetter" prefHeight="81.0" prefWidth="80.0" style="-fx-background-image: url(https://www.iconsdb.com/icons/preview/gray/hexagon-xxl.png); -fx-background-size: 80px; -fx-background-color: ghostwhite;">
+        <font>
+            <Font name="System Bold" size="20.0" />
+        </font></Button>
+    <Button fx:id="ThirdButton" layoutX="121.0" layoutY="208.0" onAction="#ThirdLetter" prefHeight="81.0" prefWidth="80.0" style="-fx-background-image: url(https://www.iconsdb.com/icons/preview/gray/hexagon-xxl.png); -fx-background-size: 80px; -fx-background-color: ghostwhite;">
+        <font>
+            <Font name="System Bold" size="20.0" />
+        </font></Button>
+    <Button fx:id="FourthButton" layoutX="201.0" layoutY="249.0" onAction="#FourthLetter" prefHeight="81.0" prefWidth="80.0" style="-fx-background-image: url(https://www.iconsdb.com/icons/preview/gray/hexagon-xxl.png); -fx-background-size: 80px; -fx-background-color: ghostwhite;">
+        <font>
+            <Font name="System Bold" size="20.0" />
+        </font></Button>
+    <Button fx:id="FifthButton" layoutX="201.0" layoutY="84.0" onAction="#FifthLetter" prefHeight="81.0" prefWidth="80.0" style="-fx-background-image: url(https://www.iconsdb.com/icons/preview/gray/hexagon-xxl.png); -fx-background-size: 80px; -fx-background-color: ghostwhite;">
+        <font>
+            <Font name="System Bold" size="20.0" />
+        </font></Button>
+    <Button fx:id="SixthButton" layoutX="282.0" layoutY="207.0" onAction="#SixthLetter" prefHeight="81.0" prefWidth="80.0" style="-fx-background-image: url(https://www.iconsdb.com/icons/preview/gray/hexagon-xxl.png); -fx-background-size: 80px; -fx-background-color: ghostwhite;" textAlignment="CENTER">
+        <font>
+            <Font name="System Bold" size="20.0" />
+        </font></Button>
+    <Label alignment="TOP_CENTER" layoutX="657.0" layoutY="18.0" prefHeight="28.0" prefWidth="192.0" text="BULUNAN KELİMELER" underline="true">
+        <font>
+            <Font name="Comic Sans MS Bold" size="16.0" />
+        </font>
+    </Label>
+    <TextField fx:id="InputWord" alignment="CENTER" layoutX="96.0" layoutY="350.0" prefHeight="46.0" prefWidth="290.0" promptText="KELİMEYİ GİRİNİZ" style="-fx-background-radius: 15; -fx-background-color: ghostwhite;">
+        <font>
+            <Font name="Comic Sans MS" size="24.0" />
+        </font></TextField>
+    <Button layoutX="110.0" layoutY="422.0" mnemonicParsing="false" onAction="#Delete" prefHeight="40.0" prefWidth="87.0" style="-fx-background-color: gray; -fx-background-radius: 15;" text="DELETE" textFill="#f3f7f3">
+        <font>
+            <Font name="System Bold" size="15.0" />
+        </font>
+    </Button>
+    <Button fx:id="Enter" layoutX="279.0" layoutY="422.0" mnemonicParsing="false" onAction="#Enter" prefHeight="40.0" prefWidth="87.0" style="-fx-background-color: gray; -fx-background-radius: 15;" text="ENTER" textFill="#f7f7f7">
+        <font>
+            <Font name="System Bold" size="15.0" />
+        </font>
+    </Button>
+    <Label fx:id="FoundWords" alignment="TOP_LEFT" layoutX="563.0" layoutY="48.0" lineSpacing="10.0" pickOnBounds="false" prefHeight="533.0" prefWidth="380.0" style="-fx-background-color: white; -fx-border-color: gray; -fx-border-image-width: 1;" wrapText="true">
+        <font>
+            <Font name="Comic Sans MS Bold" size="15.0" />
+        </font>
+        <opaqueInsets>
+            <Insets top="1.0" />
+        </opaqueInsets>
+    </Label>
+    <Button ellipsisString="" layoutX="222.0" layoutY="428.0" mnemonicParsing="false" onAction="#Shuffle" prefHeight="28.0" prefWidth="39.0" style="-fx-background-radius: 100; -fx-background-image: url(https://www.freeiconspng.com/thumbs/refresh-icon/black-refresh-icon-png-9.png); -fx-background-size: 40; -fx-background-color: ghostwhite; -fx-border-color: black; -fx-border-radius: 50;">
+        <font>
+            <Font name="JetBrains Mono Thin" size="1.0" />
+        </font></Button>
+    <Label layoutX="110.0" layoutY="400.0" prefHeight="0.0" prefWidth="262.0" style="-fx-background-color: black;">
+        <font>
+            <Font size="1.0" />
+        </font>
+    </Label>
+    <ProgressBar fx:id="counterBar" layoutX="14.0" layoutY="14.0" prefHeight="18.0" prefWidth="361.0" progress="0.0" />
+    <Label fx:id="Remaining" layoutX="33.0" layoutY="40.0" prefHeight="28.0" prefWidth="140.0" text="Kalan Kelime : ">
+        <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+        </font>
+    </Label>
+    <Button id="oyunubaslat" fx:id="Start" layoutX="166.0" layoutY="505.0" mnemonicParsing="false" onAction="#Start" prefHeight="51.0" prefWidth="150.0" style="-fx-background-color: gray; -fx-background-radius: 15;" text="Oyunu Başlat" textFill="#f3f7f3">
+        <font>
+            <Font name="System Bold" size="15.0" />
+        </font>
+    </Button>
+</Pane>
